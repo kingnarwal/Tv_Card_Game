@@ -1,0 +1,157 @@
+h1
+{margin:0;  
+}
+.card-container
+{-webkit-perspective:700;-ms-perspective:700;perspective:700; 
+}
+
+.flip-card.flipped
+{
+   -webkit-animation : card-flipper linear 0.5s;
+   animation : card-flipper linear 0.5s;
+   -webkit-transform: rotateY(180deg);
+   -ms-transform: rotateY(180deg);
+   transform: rotateY(180deg);
+}
+
+@-webkit-keyframes card-flipper {
+   from {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+   }
+   
+   to {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+   }
+}
+
+@keyframes card-flipper {
+   from {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+   }
+   
+   to {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+   }
+}
+
+
+.back
+{
+ -webkit-transform:rotateY(180deg);
+ -ms-transform:rotateY(180deg);
+ transform:rotateY(180deg);        
+}
+
+.front, .back
+{position:absolute;
+   
+ top:0;
+ left:0;  
+ width:154px;
+ height:231px;
+ -webkit-backface-visibility:hidden;
+ -ms-backface-visibility:hidden;
+ backface-visibility:hidden;
+}
+
+
+a
+{position:absolute;
+ top:650px;
+ left:825px;
+ width:160px;
+ height:45px;
+background:lightblue; 
+}
+
+#card
+{position:absolute;
+ top:100px;  
+ left:308px;     
+}
+
+#card1
+{position:absolute;
+ top:100px;  
+ left:539px; 
+}
+
+#card2
+{position:absolute;
+ top:100px;  
+ left:770px; 
+}
+
+#card3
+{position:absolute;
+ top:100px;  
+ left:1004px;     
+}
+
+#card4
+{position:absolute;
+ top:100px;  
+ left:1235px; 
+}
+
+#card5
+{position:absolute;
+ top:100px;  
+ left:1466px; 
+}
+
+#card6
+{position:absolute;
+ top:408px;  
+ left:308px;     
+}
+
+#card7
+{position:absolute;
+ top:408px;  
+ left:539px;     
+}
+
+#card8
+{position:absolute;
+ top:408px;  
+ left:770px;     
+}
+
+#card9
+{position:absolute;
+ top:408px;  
+ left:1004px;     
+}
+
+#card10
+{position:absolute;
+ top:408px;  
+ left:1235px;     
+}
+
+#card11
+{position:absolute;
+ top:408px;  
+ left:1466px;     
+}
+
+
+#card,#card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10,#card11
+{color:black;
+ text-align:center;
+ line-height:160px;  
+ width:154px;
+ height:231px;
+ border:3px solid black;  
+ border-radius:7px;  
+ -webkit-transition: all 0.6s ease;  
+ transition: all 0.6s ease; 
+ -webkit-transform-style:preserve-3d; 
+ -ms-transform-style:preserve-3d; 
+ transform-style:preserve-3d;     
+}
